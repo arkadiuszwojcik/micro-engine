@@ -7,8 +7,9 @@ namespace MicroEngine.Console
     {
         static void Main(string[] args)
         {
-            Actor a = new Actor();
-            var actor = ActorUtils.CreateActor<Actor>();
+            ObjectFactory factory = new ObjectFactory();
+            var actor = factory.CreateActor<Actor>();
+            actor.Some(4, null);
             System.Console.WriteLine("Hello World!");
         }
     }

@@ -4,7 +4,7 @@ using System.Reflection;
 
 namespace MicroEngine.Core.Replication
 {
-    public class ActorPropertyInterceptor : IInterceptor
+    class ObjectPropertyInterceptor : IInterceptor
     {
         private const string SetPrefix = "set_";
 

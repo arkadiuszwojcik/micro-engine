@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Reflection;
 using Castle.DynamicProxy;
-using MicroEngine.Core.Attributes;
+using MicroEngine.Core.Primitives.Attributes;
 
 namespace MicroEngine.Core.Replication
 {
-    public class ActorProxyGenerationHook : IProxyGenerationHook
+    class ObjectProxyGenerationHook : IProxyGenerationHook
     {
         public void MethodsInspected()
         {

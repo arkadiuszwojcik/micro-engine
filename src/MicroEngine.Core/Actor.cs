@@ -1,8 +1,9 @@
-﻿using MicroEngine.Core.Attributes;
+﻿using MicroEngine.Core.Primitives.Attributes;
+using System.Collections.Generic;
 
 namespace MicroEngine.Core
 {
-    public class Actor
+    public class Actor : XObject
     {
         bool AllowReplication { get; set; }
 
@@ -12,9 +13,9 @@ namespace MicroEngine.Core
         public virtual bool Property2 { get; set; }
 
         [RemoteFunction(ExecutionSide.Client, ExecutionReliability.Reliable)]
-        public virtual void Some()
+        public virtual bool Some(int a, List<bool> b)
         {
-
+            return true;
         }
     }
 }

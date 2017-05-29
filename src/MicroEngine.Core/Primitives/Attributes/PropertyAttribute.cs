@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MicroEngine.Core.Attributes
+namespace MicroEngine.Core.Primitives.Attributes
 {
     [Flags]
     public enum PropertyFlags
